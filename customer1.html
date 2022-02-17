@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="myapp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="test4.js"></script>
+    <link href="test1.css"
+    
+</head>
+<body ng-controller="myctrl">
+   <h1>Customer</h1>
+    <table>
+        <tr>
+            <th>CustomerId</th>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>Gender</th>
+            <th>Phone</th>
+            </tr>
+            <tbody>
+                 <tr ng-repeat="item in customer ">
+                  <td>{{item.Cid}}</td>
+                  <td>{{item.fname}}</td>
+                  <td>{{item.lname}}</td>
+                  <td>{{item.gender}}</td>
+                  <td>{{item.phone}}</td>
+                </tr>
+            </tbody>
+    </table>
+
+</div>
+</body>
+</html>
